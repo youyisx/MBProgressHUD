@@ -237,8 +237,9 @@ NS_ASSUME_NONNULL_BEGIN
  * The amount of space between the HUD edge and the HUD elements (labels, indicators or custom views).
  * This also represents the minimum bezel distance to the edge of the HUD view.
  * Defaults to 20.f
+ *    修改该属性 x 控制左右间距，y控制上下间距 -- by youyisx
  */
-@property (assign, nonatomic) CGFloat margin UI_APPEARANCE_SELECTOR;
+@property (assign, nonatomic) CGPoint margin UI_APPEARANCE_SELECTOR;
 
 /**
  * The minimum size of the HUD bezel. Defaults to CGSizeZero (no minimum size).
